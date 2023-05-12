@@ -1,0 +1,9 @@
+@import '../../common/style/sass/mixins';
+@import '../../common/style/sass/variable';
+
+.privateClientsAndConsultantsContainer{
+  @include textPosition(flex, center, nowrap);
+  justify-content: center;
+  margin-top: 81px;
+  margin-bottom: 130px;
+}

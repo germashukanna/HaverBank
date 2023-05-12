@@ -1,42 +1,29 @@
 @import '../../common/style/sass/mixins';
 @import '../../common/style/sass/variable';
 
-.headerContainer {
+.footerContainer {
   @include textPosition(flex, space-between, nowrap);
-  position: fixed;
-  min-width: 1440px;
   min-height: 80px;
   margin-left: 196px;
+  margin-right: 196px;
   top: 5px;
 
-  .logo {
+  .footerLogo {
     width: 139px;
     height: 35px;
     margin-top: 13px;
   }
 
-  .navigation {
+  .footerNavigation {
     @include textPosition(flex, space-between, nowrap);
     text-align: center;
   }
 
-  .navigation a {
+  .footerNavigation a {
     @include textPosition(flex, space-between, nowrap);
     text-align: center;
     @include text(400, 18px);
     margin: 23px 24px;
   }
 
-  .btn {
-    width: 129px;
-    height: 46px;
-    @include text(400, 18px);
-    margin-top: 12px;
-    padding: 5px 16px;
-    border-radius: 16px;
-    color: #fff;
-    background-color: #4FF997;
-    border: 1px solid;
-    margin-right: 196px;
-  }
 }

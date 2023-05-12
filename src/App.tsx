@@ -8,6 +8,9 @@ import Advantages from "./Components/Advantages";
 import BestOfTheMonth from "./Components/BestOfTheMonth";
 import MajorService from "./Components/MajorService";
 import Reviews from "./Components/Reviews";
+import Question from "./Components/Question";
+import PrivateClientsAndConsultants from "./Components/PrivateClientsAndConsultants";
+import Footer from "./Components/Footer";
 
 function App() {
     return (
@@ -20,6 +23,9 @@ function App() {
             <BestOfTheMonth/>
             <MajorService/>
             <Reviews/>
+            <Question/>
+            <PrivateClientsAndConsultants/>
+            <Footer/>
         </div>
     );
 }
