@@ -1,0 +1,38 @@
+@import '../../common/style/sass/mixins';
+@import '../../common/style/sass/variable';
+
+.majorServiceContainer {
+  display: grid;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 932px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:  "majorServiceStar majorServiceNumber majorServiceHaverBank"
+                        "majorServiceStar majorServiceReview majorServiceHaverBank";
+  grid-gap: 50px;
+  .majorServiceStar {
+    grid-area: majorServiceStar;
+margin-right: -130px;
+  }
+
+  .majorServiceNumber {
+    grid-area: majorServiceNumber;
+    @include text(400, 200px);
+    line-height: 100px;
+  }
+
+  .majorServiceReview {
+    grid-area: majorServiceReview;
+    @include text(400, 20px);
+    line-height: 36px;
+    text-align: start;
+  }
+
+  .majorServiceHaverBank {
+    grid-area: majorServiceHaverBank;
+    @include text(600, 72px);
+    line-height: 90px;
+    text-align: start;
+    margin-top: -25px;
+  }
+}

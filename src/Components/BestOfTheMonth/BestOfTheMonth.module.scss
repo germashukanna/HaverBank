@@ -1,0 +1,16 @@
+@import '../../common/style/sass/mixins';
+@import '../../common/style/sass/variable';
+
+.bestOfTheMonthContainer {
+  margin: 196px;
+
+  .bestOfTheMonthTitle {
+    @include textPosition(flex, center, nowrap);
+    @include text(700, 72px);
+    line-height: 90px;
+  }
+
+  .bestOfTheMonthBanks {
+    @include textPosition(flex, space-between, nowrap);
+  }
+}

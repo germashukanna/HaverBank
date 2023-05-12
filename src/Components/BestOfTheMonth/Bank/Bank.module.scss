@@ -1,0 +1,46 @@
+@import '../../../common/style/sass/mixins';
+@import '../../../common/style/sass/variable';
+
+.bankContainer {
+  width: 244px;
+  height: 308px;
+  border-radius: 16px;
+  padding: 24px;
+  background-color: $secondbackgroundColor;
+  margin-right: 24px;
+
+  .bankTop {
+    .bankTopImage {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+    }
+
+    .bankTopDescription {
+      @include text(600, 18px);
+      line-height: 28px;
+    }
+  }
+
+  .bankTopBid {
+    @include text(400, 14px);
+    line-height: 20px;
+    color: $secondTextColor;
+    margin: 0 auto;
+    margin-bottom: -5px;
+  }
+
+  .bankTopBidNumber {
+    @include text(600, 48px);
+    line-height: 60px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
+  .bankTopBidYears {
+    @include text(400, 18px);
+    line-height: 20px;
+
+  }
+
+}

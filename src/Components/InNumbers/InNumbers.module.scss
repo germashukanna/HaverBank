@@ -1,0 +1,212 @@
+@import '../../common/style/sass/mixins';
+@import '../../common/style/sass/variable';
+
+.inNumbersContainer {
+  background-color: #E5E5E5;
+
+  .inNumbersTitle {
+    @include textPosition(flex, center, nowrap);
+    text-align: center;
+    @include text(700, 72px);
+    color: $mainTextColor;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  "gridBlock1 gridBlock3 gridBlock4"
+                        "gridBlock2 gridBlock3 gridBlock4";
+    grid-gap: 24px;
+    margin: 50px 196px 150px 196px;
+
+
+    .gridBlock1 {
+      grid-area: gridBlock1;
+      width: 333px;
+      height: 211px;
+      border-radius: 16px;
+      background-color: #323C46;
+      background-image: url("../../assets/image/banks/Vector 2.svg"),
+      url("../../assets/image/banks/Vector 3.svg");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      animation: slide 30s linear 1;
+
+      .gridBlock1Title {
+        @include text(600, 32px);
+        line-height: 40px;
+        text-align: left;
+        vertical-align: top;
+        color: $whiteTextColor;
+        padding: 24px 24px 0 24px;
+      }
+
+      .gridBlock1Description {
+        @include text(400, 18px);
+        line-height: 28px;
+        text-align: left;
+        color: $whiteTextColor;
+        padding: 0 24px;
+      }
+    }
+
+    .gridBlock2 {
+      grid-area: gridBlock2;
+      width: 333px;
+      height: 211px;
+      border-radius: 16px;
+      background-color: $secondbackgroundColor;
+
+      .gridBlock2Title {
+        @include text(600, 32px);
+        line-height: 40px;
+        text-align: left;
+        vertical-align: top;
+        color: $mainTextColor;
+        padding: 24px 24px 0 24px;
+      }
+
+      .gridBlock2Description {
+        @include text(400, 18px);
+        line-height: 28px;
+        text-align: left;
+        color: $secondTextColor;
+        padding: 0 24px;
+      }
+    }
+
+    .gridBlock3 {
+      grid-area: gridBlock3;
+      background-color: $secondbackgroundColor;
+      width: 334px;
+      height: 446px;
+      border-radius: 16px;
+
+      background-image: url("../../assets/image/econom.svg");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+
+      .gridBlock3Title {
+        @include text(600, 32px);
+        line-height: 40px;
+        text-align: left;
+        vertical-align: top;
+        color: $mainTextColor;
+        padding: 24px 24px 0 24px;
+      }
+
+      .gridBlock3Description {
+        @include text(400, 18px);
+        line-height: 28px;
+        text-align: left;
+        color: $secondTextColor;
+        padding: 0 24px;
+      }
+    }
+
+    .gridBlock4 {
+
+      grid-area: gridBlock4;
+      background-color: #40C3E2;
+      width: 334px;
+      height: 446px;
+      border-radius: 16px;
+
+      .gridBlock4Title {
+        @include text(600, 32px);
+        line-height: 40px;
+        text-align: left;
+        vertical-align: top;
+        color: $whiteTextColor;
+        padding: 24px 24px 0 24px;
+      }
+
+      .gridBlock4Description {
+        @include text(400, 18px);
+        line-height: 28px;
+        text-align: left;
+        color: $whiteTextColor;
+        padding: 0 24px;
+      }
+
+      .groupContainer {
+        position: relative;
+
+        .group1 {
+          position: absolute;
+          top: 21px;
+          left: 226px;
+        }
+        .group2 {
+          position: absolute;
+          top: 123px;
+          left: 119px;
+        }
+        .group3 {
+          position: absolute;
+          top: 49px;
+          left: 128px;
+        }
+        .group4 {
+          position: absolute;
+          top: 115px;
+          left: 41px;
+        }
+        .group5 {
+          position: absolute;
+          top: 113px;
+          left: 255px;
+        }
+        .group6 {
+          position: absolute;
+          top: 198px;
+          left: 247px;
+        }
+        .group7 {
+          position: absolute;
+          top: 36px;
+          left: 16px;
+        }
+        .group8 {
+          position: absolute;
+          top: 245px;
+          left: 167px;
+        }
+        .group9 {
+          position: absolute;
+          top: 218px;
+          left: 54px;
+          //animation: animateReduce 5s 1;
+        }
+        .group10 {
+          position: absolute;
+          top: 185px;
+          left: 0px;
+        }
+      }
+    }
+  }
+}
+
+//@keyframes animateReduce {
+//  0% {
+//    transform: scale3d(1, 1, 1);
+//  }
+//  50% {
+//    transform: scale3d(0.7, 0.7, 0.7);
+//  }
+//  100% {
+//    transform: scale3d(1, 1, 1);
+//  }
+//}
+
+//@keyframes slide {
+//  100% {
+//    background-size: 0% 100%;
+//  }
+// 0% {
+//   background-size: 0% 0%;
+//  }
+//
+//}
+

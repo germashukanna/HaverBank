@@ -1,0 +1,28 @@
+@import '../../common/style/sass/mixins';
+@import '../../common/style/sass/variable';
+
+.partnersContainer{
+  .partnersTitle{
+    @include textPosition(flex, center, nowrap);
+    @include text(400, 16px);
+    color: $mainTextColor;
+    opacity: 70%;
+    margin-top: 182px;
+
+  }
+  .banks{
+    @include textPosition(flex, space-between, nowrap);
+    margin-bottom: 150px;
+    animation: slide-in 20s linear infinite;
+
+}
+}
+
+@keyframes slide-in {
+from {
+  transform: translateX(100%);
+}
+to {
+  transform: translateX(-100%);
+}
+}

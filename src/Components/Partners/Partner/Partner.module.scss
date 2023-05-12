@@ -1,0 +1,23 @@
+@import '../../../common/style/sass/variable';
+@import '../../../common/style/sass/mixins';
+
+.partnerContainer {
+  width: 256px;
+  height: 80px;
+  background-color: $secondbackgroundColor;
+  border-radius: 16px;
+  display: flex;
+  text-align: center;
+  border: 1px solid black;
+
+  .partnerImage {
+    width: 48px;
+    height: 48px;
+    margin: auto auto;
+  }
+
+  .partnerDescription {
+    @include text(600, 18px);
+    margin: auto auto;
+  }
+}

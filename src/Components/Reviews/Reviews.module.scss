@@ -1,0 +1,58 @@
+@import '../../common/style/sass/mixins';
+@import '../../common/style/sass/variable';
+
+.reviewsContainer {
+  margin-left: 196px;
+  margin-top: 80px;
+  .projects {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  "manager4 manager31 manager2"
+                        "manager3 manager41 manager1";
+    grid-gap: 24px;
+    grid-template-rows: 248px 528px;
+    justify-content: space-evenly;
+    align-content: stretch;
+
+    .manager4 {
+      grid-area: manager4;
+      width: 333px;
+      background-color: #1b687e;
+    }
+
+    .manager3 {
+      grid-area: manager3;
+      width: 333px;
+      background-color: #1b687e;
+    }
+
+    .manager31 {
+      grid-area: manager31;
+      width: 333px;
+      height: 528px;
+      background-color: #1b687e;
+    }
+
+    .manager41 {
+      grid-area: manager41;
+      width: 333px;
+      height: 248px;
+      background-color: #dcb0b0;
+      position: absolute;
+      top: 280px;
+    }
+
+    .manager2 {
+      grid-area: manager2;
+      width: 333px;
+      background-color: #1b687e;
+    }
+
+    .manager1 {
+      grid-area: manager1;
+      width: 333px;
+      background-color: #dcb0b0;
+    }
+  }
+}

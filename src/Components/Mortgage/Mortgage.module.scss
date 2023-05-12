@@ -1,0 +1,26 @@
+@import '../../common/style/sass/mixins';
+@import '../../common/style/sass/variable';
+
+.mortgageContainer {
+  min-width: 1048px;
+  min-height: 738px;
+  background-color: rgba(79, 249, 151, 0.72);
+  padding-left: 196px;
+.mortgageTitle{
+  @include text(600, 88px);
+  text-align: start;
+  line-height: 100px;
+  vertical-align: top;
+}
+  .mortgageDescription{
+    @include text(400, 24px);
+    text-align: start;
+    line-height: 36px;
+    vertical-align: top;
+  }
+  .mortgageCards {
+    @include textPosition(flex, start, nowrap);
+    margin-top: 81px;
+  }
+
+}

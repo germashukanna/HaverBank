@@ -1,0 +1,28 @@
+@import '../../../common/style/sass/variable';
+@import '../../../common/style/sass/mixins';
+
+.privateClientsContainer {
+  max-width: 464px;
+  max-height: 360px;
+  background-color: $secondbackgroundColor;
+  border-radius: 16px;
+  margin-right: 24px;
+  padding: 0 24px;
+
+  .privateClientsHeader {
+    @include textPosition(flex, space-between, nowrap);
+
+    .privateClientsTitle {
+      @include text(600, 28px);
+    }
+  }
+
+  .privateDescription {
+    @include text(400, 18px);
+    color: $secondTextColor;
+  }
+
+  .privateImage {
+    float: right;
+  }
+}
