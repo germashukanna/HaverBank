@@ -22,17 +22,6 @@
   }
   .btnContainer {
     @include textPosition(flex, center, nowrap);
-    .btn {
-      width: 252px;
-      height: 56px;
-      @include text(400, 18px);
-      margin-top: 12px;
-      padding: 10px 16px;
-      border-radius: 16px;
-      color: #fff;
-      background-color: #4FF997;
-      border: 1px solid;
-      margin-right: 196px;
-    }
+
   }
 }

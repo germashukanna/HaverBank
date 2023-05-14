@@ -1,0 +1,16 @@
+@import '../../../../common/style/sass/mixins';
+@import '../../../../common/style/sass/variable';
+
+.openModalButton {
+  width: 568px;
+  height: 56px;
+  cursor: pointer;
+  @include text(400, 18px);
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 16px;
+  color: #fff;
+  background-color: #4FF997;
+  border: 1px solid;
+
+}

@@ -1,0 +1,37 @@
+@import '../../../common/style/sass/mixins';
+@import '../../../common/style/sass/variable';
+
+.formAddNewPack {
+  height: 820px;
+  width: 674px;
+  border-radius: 2px;
+  padding: 0 56px 56px 56px;
+}
+
+.headerModalAddNewPack {
+  @include textPosition(flex, space-between, nowrap);
+  padding: 32px 0 17px 0;
+}
+
+.headerModalAddNewPack button {
+  background-color: #FFFFFF;
+  border: none;
+  height: 32px;
+  width: 32px;
+}
+
+.label {
+  @include textPosition(flex, center, nowrap);
+  @include text(700, 32px);
+  line-height: 40px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.labelDescription {
+  @include textPosition(flex, center, nowrap);
+  @include text(400, 18px);
+  color: $secondTextColor;
+  line-height: 28px;
+}
+

@@ -34,6 +34,7 @@
   .btn {
     width: 129px;
     height: 46px;
+    cursor: pointer;
     @include text(400, 18px);
     margin-top: 12px;
     padding: 5px 16px;
