@@ -35,3 +35,51 @@
   line-height: 28px;
 }
 
+.informationalModalContainer {
+  height: 296px;
+  width: 674px;
+  border-radius: 2px;
+  padding: 0 56px 56px 56px;
+
+}
+
+.informationalModalHeader {
+  @include textPosition(flex, space-between, nowrap);
+  padding: 32px 0 17px 0;
+}
+
+.informationalModalHeader button {
+  background-color: #FFFFFF;
+  border: none;
+  height: 32px;
+  width: 32px;
+}
+
+.informationalModalLabel {
+  @include textPosition(flex, center, nowrap);
+  @include text(700, 32px);
+  line-height: 40px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.informationalModalLabelDescription {
+  @include textPosition(flex, center, nowrap);
+  @include text(400, 18px);
+  color: $secondTextColor;
+  line-height: 28px;
+}
+
+.openModalButton {
+  width: 568px;
+  height: 56px;
+  cursor: pointer;
+  @include text(400, 18px);
+  margin-top: 24px;
+  padding: 10px 16px;
+  border-radius: 16px;
+  color: #fff;
+  background-color: #4FF997;
+  border: 1px solid;
+
+}

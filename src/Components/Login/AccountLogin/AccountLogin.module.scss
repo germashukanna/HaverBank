@@ -1,0 +1,47 @@
+@import '../../../common/style/sass/mixins';
+@import '../../../common/style/sass/variable';
+
+.accountLoginContainer {
+
+  .accountLoginContainer {
+    margin: 0 56px;
+  }
+
+  .accountLoginPassword {
+    text-align: end;
+    padding: 24px 56px;
+
+    .accountLoginPasswordLink {
+      @include text(400, 18px);
+      color: $mainTextColor;
+    }
+  }
+
+  .accountLoginBtnContainer {
+    @include textPosition(flex, center, nowrap);
+
+    .accountLoginBtn {
+      width: 562px;
+      height: 56px;
+      cursor: pointer;
+      @include text(400, 18px);
+      padding: 5px 16px;
+      border-radius: 16px;
+      color: #fff;
+      background-color: #4FF997;
+      border: 1px solid;
+    }
+  }
+
+  .wrapperTextRegistration {
+    @include textPosition(flex, center, nowrap);
+    padding-top: 34px;
+    .accountLoginBtnArrow{
+      border: none;
+      background-color: #FFFFFF;
+      cursor: pointer;
+      @include text(400, 18px);
+      line-height: 28px;
+    }
+  }
+}

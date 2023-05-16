@@ -1,0 +1,27 @@
+@import '../../../common/style/sass/mixins';
+@import '../../../common/style/sass/variable';
+
+.loginButtonContainer {
+  .loginButton {
+    width: 562px;
+    height: 56px;
+    @include text(400, 18px);
+    @include textPosition(flex, center, nowrap);
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #4FF997;
+    background-color: $secondbackgroundColor;
+    border-radius: 16px;
+    padding: 10px 16px;
+    margin: 24px auto;
+    cursor: pointer;
+  }
+
+  .loginImg {
+    padding: 4px 16px;
+  }
+
+  .loginImgApple {
+    padding: 0 16px;
+  }
+}

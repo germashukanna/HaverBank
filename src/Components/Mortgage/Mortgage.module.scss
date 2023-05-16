@@ -2,10 +2,10 @@
 @import '../../common/style/sass/variable';
 
 .mortgageContainer {
-  min-width: 1048px;
+  //min-width: 1048px;
   min-height: 738px;
   background-color: rgba(79, 249, 151, 0.72);
-  padding-left: 196px;
+  padding: 0 196px;
 .mortgageTitle{
   @include text(600, 88px);
   text-align: start;

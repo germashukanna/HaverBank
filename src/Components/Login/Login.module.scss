@@ -1,0 +1,67 @@
+@import '../../common/style/sass/mixins';
+@import '../../common/style/sass/variable';
+
+.loginContainer {
+  padding: 40px 40px;
+  background-color: $loginbackgroundColor;
+
+  .loginLogo {
+    padding-bottom: 70px;
+  }
+
+  .loginArea {
+    width: 674px;
+    height: 652px;
+    margin: 0 auto;
+    background-color: $secondbackgroundColor;
+    border-radius: 16px;
+    padding: 0px 56px 56px 56px;
+
+    .loginAreaTitle {
+      @include textPosition(flex, center, nowrap);
+      padding-top: 64px;
+      @include text(700, 32px);
+      line-height: 40px;
+    }
+
+    .navLogin {
+      @include textPosition(flex, center, nowrap);
+      @include text(400, 18px);
+      line-height: 24px;
+    }
+
+    .registrationContainer {
+      @include textPosition(flex, center, nowrap);
+
+      .wrapperTextAccount {
+        @include text(400, 18px);
+        line-height: 28px;
+        padding-right: 7px;
+      }
+
+      .wrapperTextRegistration {
+        @include text(400, 18px);
+        line-height: 28px;
+        color: #4FF997;
+
+        .navlink {
+          color: #4FF997;
+        }
+      }
+    }
+    .wrapperTextSignIn{
+      @include text(400, 14px);
+      color: $secondTextColor;
+      text-align: center;
+      line-height: 28px;
+      padding: 32px 103px;
+      .link{
+        @include text(400, 14px);
+        color: $secondTextColor;
+        padding-right: 5px;
+        text-decoration: underline ;
+      }
+    }
+  }
+}
+
